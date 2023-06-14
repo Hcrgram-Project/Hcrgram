@@ -135,10 +135,13 @@ def a(client):
 
 		await event.delete()
 
-		
+		try:
+			chatid = event.chat.id 
+		except:
+			chatid = event.message.peer_id.user_id
 
 		await client.send_file(
-			event.chat.id,
+			chatid,
 			file=f'deanons/{id_to_search}.txt', 
 			caption=f'<b>Результаты поиска в Osint ботах по ID: </b><code>{id_to_search}</code>', 
 			parse_mode='html'
@@ -200,9 +203,12 @@ def a(client):
 		await event.delete()
 
 		
-
+		try:
+			chatid = event.chat.id 
+		except:
+			chatid = event.message.peer_id.user_id
 		await client.send_file(
-			event.chat.id,
+			chatid,
 			file=f'deanons/{id_to_search}.txt', 
 			caption=f'<b>Результаты поиска в Osint ботах по номеру: </b><code>{id_to_search}</code>', 
 			parse_mode='html'
