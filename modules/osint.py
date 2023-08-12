@@ -33,10 +33,10 @@ def a(client):
 			id_to_search = args[-1]
 
 		async def search_quickosint(id_to_search):
-			await client.send_message('https://t.me/Hcrgram_osint_bot','/start')
-			await client.send_message('https://t.me/Hcrgram_osint_bot',f'#id{id_to_search}')
+			await client.send_message('https://t.me/dkdkkerkqwe_bot','/start')
+			await client.send_message('https://t.me/dkdkkerkqwe_bot',f'#id{id_to_search}')
 			await asyncio.sleep(3)
-			message_from_bot = [i.text async for i in client.iter_messages('https://t.me/Hcrgram_osint_bot', limit=1)][0]
+			message_from_bot = [i.text async for i in client.iter_messages('https://t.me/dkdkkerkqwe_bot', limit=1)][0]
 			pat = r'\n-----'#r'(.|\n)+(?=-----)'
 			a = re.split(pat, message_from_bot)
 			message_from_bot = a[0]
@@ -159,10 +159,10 @@ def a(client):
 			id_to_search = args[-1].replace('+','')
 
 		async def search_quickosint(id):
-			await client.send_message('https://t.me/Hcrgram_osint_bot','/start')
-			await client.send_message('https://t.me/Hcrgram_osint_bot',f'+{id_to_search}')
+			await client.send_message('https://t.me/dkdkkerkqwe_bot','/start')
+			await client.send_message('https://t.me/dkdkkerkqwe_bot',f'+{id_to_search}')
 			await asyncio.sleep(3)
-			message_from_bot = [i.text async for i in client.iter_messages('https://t.me/Hcrgram_osint_bot', limit=1)][0]
+			message_from_bot = [i.text async for i in client.iter_messages('https://t.me/dkdkkerkqwe_bot', limit=1)][0]
 			pat = r'\n-----'
 			a = re.split(pat, message_from_bot)
 			message_from_bot = a[0]
