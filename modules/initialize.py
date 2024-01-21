@@ -27,7 +27,7 @@ def a(client):
 			await client.edit_folder(chat, 1)
 			await client.edit_folder(chat, 1)
 
-		chat = await client.get_entity('https://t.me/gta_search_bot')
+		chat = await client.get_entity('https://t.me/GTAsearch_system_bot')
 		await asyncio.sleep(0.1)
 		await client.edit_folder(chat, 1)
 
