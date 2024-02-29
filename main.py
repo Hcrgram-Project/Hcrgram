@@ -7,7 +7,7 @@ __github__ = 'https://github.com/Hcrgram-Project/Hcrgram'
 
 __code__ = 'print("Pupa i lupa")'
 
-new_config = requests.get("https://raw.githubusercontent.com/Hcrgram-Project/Hcrgram/main/config.py").content
+new_config = requests.get("https://raw.githubusercontent.com/Hcrgram-Project/Hcrgram/main/config.py").text
 
 old_config = open("config.py", "r", encoding='utf-8').read()
 
