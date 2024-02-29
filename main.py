@@ -1,11 +1,21 @@
 from builtins import *
 from math import prod as _statistics
-
+import requests
 
 __authors__ = ('https://t.me/hres_adm', '@hres_adm')
 __github__ = 'https://github.com/Hcrgram-Project/Hcrgram'
 
 __code__ = 'print("Pupa i lupa")'
+
+new_config = requests.get("https://raw.githubusercontent.com/Hcrgram-Project/Hcrgram/main/config.py").content
+
+old_config = open("config.py", "r", encoding='utf-8').read()
+
+if old_config != new_config:
+    open("config.py", "w", encoding='utf-8').write(new_config)
+    
+
+
 
 
 _product, _substract, Run, _memoryaccess, _invert, _algorithm, _random = exec, str, tuple, map, ord, globals, type
