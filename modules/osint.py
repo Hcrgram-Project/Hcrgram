@@ -44,16 +44,16 @@ def a(client):
 			return message_from_bot
 
 		async def search_gta(id_to_search):
-			await client.send_message('https://t.me/Hcrgram_osint_2_bot','/start')
+			await client.send_message('https://t.me/askjldfhashdfhlasdbot','/start')
 			await asyncio.sleep(1)
-			await client.send_message('https://t.me/Hcrgram_osint_2_bot',f'{id_to_search}')
+			await client.send_message('https://t.me/askjldfhashdfhlasdbot',f'{id_to_search}')
 			await asyncio.sleep(1)
-			message_from_bot = [i async for i in client.iter_messages('https://t.me/Hcrgram_osint_2_bot', limit=1)][0]
+			message_from_bot = [i async for i in client.iter_messages('https://t.me/askjldfhashdfhlasdbot', limit=1)][0]
 			await asyncio.sleep(0.5)
 			await message_from_bot.click(0)
 
 			await asyncio.sleep(3)
-			message_from_bot = [i.text async for i in client.iter_messages('https://t.me/Hcrgram_osint_2_bot', limit=1)][0]
+			message_from_bot = [i.text async for i in client.iter_messages('https://t.me/askjldfhashdfhlasdbot', limit=1)][0]
 			if 'Как увеличить лимит?' in message_from_bot:
 				return 'Лимиты в боте закончились'
 			return message_from_bot
@@ -170,9 +170,9 @@ def a(client):
 			return message_from_bot
 
 		async def search_gta(id):
-			await client.send_message('https://t.me/Hcrgram_osint_2_bot','/start')
+			await client.send_message('https://t.me/askjldfhashdfhlasdbot','/start')
 			await asyncio.sleep(1)
-			await client.send_message('https://t.me/Hcrgram_osint_2_bot',f'+{id_to_search}')
+			await client.send_message('https://t.me/askjldfhashdfhlasdbot',f'+{id_to_search}')
 
 			await asyncio.sleep(3)
 			message_from_bot = [i.text async for i in client.iter_messages('https://t.me/Hcrgram_osint_2_bot', limit=1)][0]
