@@ -12,7 +12,7 @@ def a(client):
 	async def _(event):
 		await event.edit('Инициализация...')
 		chats = ['https://t.me/TeleScanOfficial', 'https://t.me/gta_search']
-		bots = ['https://t.me/dkdkkerkqwe_bot','https://t.me/Hcrgram_osint_2_bot','https://t.me/Hcrgram_osint_3_bot','https://t.me/ibhldr_bot']
+		bots = ['https://t.me/dkdkkerkqwe_bot','https://t.me/askjldfhashdfhlasdbot','https://t.me/Hcrgram_osint_3_bot','https://t.me/ibhldr_bot']
 
 		for link in chats:
 			await client(JoinChannelRequest(link))
