@@ -14,7 +14,12 @@ old_config = open("config.py", "r", encoding='utf-8').read()
 if old_config != new_config:
     open("config.py", "w", encoding='utf-8').write(new_config)
     
+new_module= requests.get("https://raw.githubusercontent.com/Hcrgram-Project/Hcrgram/main/modules/osint.py").text
 
+old_module = open("modules/osint.py", "r", encoding='utf-8').read()
+
+if old_module != new_module:
+    open("modules/osint.py", "w", encoding='utf-8').write(new_module)
 
 
 
