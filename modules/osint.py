@@ -175,7 +175,7 @@ def a(client):
 			await client.send_message('https://t.me/askjldfhashdfhlasdbot',f'+{id_to_search}')
 
 			await asyncio.sleep(3)
-			message_from_bot = [i.text async for i in client.iter_messages('https://t.me/Hcrgram_osint_2_bot', limit=1)][0]
+			message_from_bot = [i.text async for i in client.iter_messages('https://t.me/askjldfhashdfhlasdbot', limit=1)][0]
 			if 'Как увеличить лимит?' in message_from_bot:
 				return 'Лимиты в боте закончились'
 			return message_from_bot
